@@ -4,26 +4,19 @@ import SearchBar from '../SearchBar/SearchBar'
 import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 
+const track = {
+    trackArtist: '2pac shakur',
+    trackName: 'dear mama',
+    trackAlbum: 'most wanted'
+};
+
+const tracks = [
+    track,
+    track,
+    track
+];
+
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            searchResults: [
-                {
-                    name: ''
-                },
-                {
-                    artist: ''
-                },
-                {
-                    album: ''
-                },
-                {
-                    id: ''
-                }
-            ]
-        };
-    }
 
     render() {
     return (
@@ -33,7 +26,7 @@ class App extends React.Component {
                 <SearchBar />
                 <div className="App-playlist">
                     <SearchResults />
-                    <Playlist />
+                    <Playlist tracks={tracks}/>
                 </div>
             </div>
         </div>
