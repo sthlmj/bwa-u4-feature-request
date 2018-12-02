@@ -2,6 +2,10 @@ import React from 'react';
 import './Playlist.css'
 import TrackList from "../TrackList/TrackList";
 
+/*
+Playlist allows users to add tracks to this playlist and save it to their spotify account.
+ */
+
 class Playlist extends React.Component {
     render(){
         return (

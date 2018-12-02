@@ -1,9 +1,11 @@
 import React from 'react';
 import './Track.css'
+import {App} from "../App/App"
 
 
 /*
 Track component lets users adds or remove tracks to their playlist by selecting a + sign or - sign.
+It holds info about song, artist, album.
  */
 class Track extends React.Component {
 
@@ -23,8 +25,8 @@ class Track extends React.Component {
         return (
             <div className="Track">
                 <div className="Track-information">
-                    <h3>{this.props.track.trackName}</h3>
-                    <p>{`${this.props.track.trackArtist} | ${this.props.track.trackAlbum}`}</p>
+                    <h3>{this.props.track.name}</h3>
+                    <p>{`${this.props.track.artist} | ${this.props.track.album}`}</p>
                 </div>
                 <a className="Track-action" isRemoval={true}></a>
             </div>

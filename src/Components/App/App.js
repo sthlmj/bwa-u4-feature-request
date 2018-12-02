@@ -5,9 +5,9 @@ import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 
 const track = {
-    trackArtist: '2pac shakur',
-    trackName: 'dear mama',
-    trackAlbum: 'most wanted'
+    artist: '2pac shakur',
+    name: 'dear mama',
+    album: 'most wanted'
 };
 
 const tracks = [
@@ -17,6 +17,24 @@ const tracks = [
 ];
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state.searchResults = [
+            {
+                name : ''
+            },
+            {
+                artist : ''
+            },
+            {
+                album : ''
+            },
+            {
+                id : ''
+            }
+        ];
+        
+    }
 
     render() {
     return (
@@ -25,7 +43,7 @@ class App extends React.Component {
             <div className="App">
                 <SearchBar />
                 <div className="App-playlist">
-                    <SearchResults />
+                    <SearchResults searchResults={this.state.searchResults}/>
                     <Playlist tracks={tracks}/>
                 </div>
             </div>
