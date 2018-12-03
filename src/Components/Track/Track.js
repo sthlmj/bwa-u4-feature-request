@@ -21,12 +21,13 @@ class Track extends React.Component {
         }
     }
 
+    //TODO: Fix rendering method on this.props.track.name
     render() {
         return (
             <div className="Track">
                 <div className="Track-information">
-                    <h3>{this.props.track.name}</h3>
-                    <p>{`${this.props.track.artist} | ${this.props.track.album}`}</p>
+                    <h3>{this.props.name}</h3>
+                    <p>{`${this.props.artist} | ${this.props.album}`}</p>
                 </div>
                 <a className="Track-action" isRemoval={true}></a>
             </div>

@@ -19,21 +19,14 @@ const tracks = [
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state.searchResults = [
-            {
-                name : ''
-            },
-            {
-                artist : ''
-            },
-            {
-                album : ''
-            },
-            {
-                id : ''
-            }
-        ];
-        
+        this.state = {
+            searchResults: [
+                {name: ''},
+                {artist: ''},
+                {album: ''},
+                {id: ''}
+            ]
+        }
     }
 
     render() {
