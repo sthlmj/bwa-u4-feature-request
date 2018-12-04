@@ -13,7 +13,7 @@ class SearchResults extends React.Component {
                 <h2>Results</h2>
                 <TrackList tracks={this.props.searchResults.map(track => {
                     return <Track key={track.id} /> }
-                    )} />
+                )} />
             </div>
         )
     }

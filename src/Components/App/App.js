@@ -5,9 +5,9 @@ import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 
 const track = {
-    artist: '2pac shakur',
-    name: 'dear mama',
-    album: 'most wanted'
+    artist: 'DJ Khaleed',
+    name: 'You Mine',
+    album: 'I Changed a Lot'
 };
 
 const tracks = [

@@ -1,7 +1,5 @@
 import React from 'react';
 import './Track.css'
-import {App} from "../App/App"
-
 
 /*
 Track component lets users adds or remove tracks to their playlist by selecting a + sign or - sign.
