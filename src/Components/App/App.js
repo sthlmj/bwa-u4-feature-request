@@ -3,7 +3,9 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar'
 import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
+import Track from "../Track/Track"
 
+/*
 const track = {
     artist: 'DJ Khaleed',
     name: 'You Mine',
@@ -15,15 +17,16 @@ const tracks = [
     track,
     track
 ];
+ */
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             searchResults: [
-                {name: ''},
-                {artist: ''},
-                {album: ''},
+                {name: 'You Mine'},
+                {artist: 'DJ Khaled'},
+                {album: 'I Changed a Lot'},
                 {id: ''}
             ]
         }
@@ -37,7 +40,7 @@ class App extends React.Component {
                 <SearchBar />
                 <div className="App-playlist">
                     <SearchResults searchResults={this.state.searchResults}/>
-                    <Playlist tracks={tracks}/>
+                    <Playlist />
                 </div>
             </div>
         </div>
