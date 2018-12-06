@@ -1,7 +1,9 @@
 import React from 'react';
 import './SearchBar.css'
 
-/* This is the searchbar, it allows the user to search for song, artist, and album. */
+/*
+Purpose of SearchBar is to make it possible for users to search for tracks.
+ */
 
 class SearchBar extends React.Component {
     render() {
@@ -12,7 +14,6 @@ class SearchBar extends React.Component {
             </div>
         )
     }
-
 }
 
 export default SearchBar;
