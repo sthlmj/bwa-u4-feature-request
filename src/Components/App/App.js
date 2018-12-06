@@ -13,7 +13,7 @@ class App extends React.Component {
     constructor(props) {
         super(props)
 
-        //A little bit unsure of this array objects.
+        //Re-check this array objects.
         this.state = {
             searchResults: [
                 { name: 'Gold Slug' },
