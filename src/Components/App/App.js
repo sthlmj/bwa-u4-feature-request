@@ -13,16 +13,38 @@ class App extends React.Component {
     constructor(props) {
         super(props)
 
-        //Re-check this array objects.
         this.state = {
             searchResults: [
                 { name: 'Gold Slug' },
                 { artist: 'DJ Khaled' },
                 { album: 'You Mine' },
                 { id : '101 Album ID' }
+            ],
+            playlistName: 'My Playlist',
+            playlistTracks: [
+                { name: 'Another One' },
+                { artist: 'DJ Khaled' },
+                { album: 'You Mine' },
+                { id: '102 Album ID' }
             ]
         }
+
+        //Bindings
+        this.addTrack = this.addTrack.bind(this);
     };
+
+
+    //Add tracks checks if the current song is in the playlistTracks state. if id is new, add the song to the end of the playlist.
+    addTrack(track) {
+        if(this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
+            return;
+        }
+    }
+
+    //TODO
+    removeTrack(track) {
+
+    }
 
     render() {
     return (
@@ -31,8 +53,8 @@ class App extends React.Component {
             <div className="App">
                 <SearchBar />
                 <div className="App-playlist">
-                    <SearchResults />
-                    <Playlist />
+                    <SearchResults onAdd={this.addTrack} />
+                    <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks}/>
                 </div>
             </div>
         </div>
