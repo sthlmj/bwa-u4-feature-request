@@ -8,12 +8,24 @@ Purpose of Playlist is to hold list of Tracks so that users can save tracks to t
  */
 
 class Playlist extends React.Component {
-    render(){
+    constructor(props) {
+        super(props)
+        this.handleNamechange = this.handleNamechange.bind(this)
+    }
+
+    handleNamechange(event) {
+        this.props.onNameChange(event.target.value)
+    }
+
+
+    render(event){
         return (
             <div className="Playlist">
-                <input defaultValue={'New Playlist'}/>
-                <TrackList tracks={this.props.playlistTracks}/>
-                <a className="Playlist-save">SAVE TO SPOTIFY</a>
+                <input defaultValue={'New Playlist'} onChange={this.handleNamechange} />
+                <TrackList tracks={this.props.playlistTracks}
+                           isRemoval={true}
+                           onRemove={this.props.onRemove} />
+                <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
             </div>
         )
     }
