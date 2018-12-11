@@ -17,7 +17,7 @@ class Track extends React.Component {
         this.props.onAdd(this.props.onAdd)
     };
 
-    removeTrack() {
+    removeTrack(event) {
         this.props.onRemove(this.props.track);
     }
 
@@ -36,7 +36,7 @@ class Track extends React.Component {
                     <h3>{this.props.track.name}</h3>
                     <p>${this.props.track.artist} | ${this.props.track.album}</p>
                 </div>
-
+                {this.renderAction()}
             </div>
         )
     }

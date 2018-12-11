@@ -31,8 +31,10 @@ class App extends React.Component {
 
     //Add tracks checks if the current song is in the playlistTracks state. if id is new, add the song to the end of the playlist.
     addTrack(track) {
-        if(this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
-            return;
+        if(this.state.playlistTracks.findIndex(_track => _track.id === track.id) === -1) {
+            let tracks = this.state.playlistTracks
+            tracks.push(track)
+            this.setState({playlistTracks: tracks})
         }
     }
 
