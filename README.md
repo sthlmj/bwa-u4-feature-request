@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Jammming](https://github.com/sthlmj/jammming/blob/master/public/jammming.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
