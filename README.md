@@ -1,4 +1,4 @@
-<img src="https://imgur.com/a/LY1Mpz0" alt="Jammming">
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/LY1Mpz0"><a href="//imgur.com/LY1Mpz0"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
