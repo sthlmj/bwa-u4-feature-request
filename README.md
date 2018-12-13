@@ -1,8 +1,8 @@
-Jammming is a Spotify clone, focused on front-end technologies like reactJS, javascript (ES6), html, css, jsx. It's integrated with spotify API for search requests, response and playlist savings to users spotify account.
+Jammming is a Spotify.com clone, focused on front-end technologies like reactJS, javascript (ES6), html, css, jsx. It's integrated with spotify API for search requests and response.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Jammming](https://github.com/sthlmj/jammming/blob/master/public/jammming.png)
+![Ravenous](https://github.com/sthlmj/jammming/blob/master/public/jammming.png)
 
 ## Available Scripts
 
